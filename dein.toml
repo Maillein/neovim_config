@@ -1,0 +1,30 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+depends = ['nerdtree']
+hook_add = '''
+    " Ctrl+Nで起動
+    map <C-n> <plug>NERDTreeTabsToggle<CR>
+
+    " 起動時に有効化
+    let g:nerdtree_tabs_open_on_console_startup=1
+
+    "引数なしでvimを開いたらNERDTreeを起動、
+    "引数ありならNERDTreeは起動しない、引数で渡されたファイルを開く。
+    autocmd vimenter * if !argc() | NERDTree | endif
+
+    "他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる。
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+'''
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
