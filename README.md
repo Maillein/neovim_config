@@ -1,0 +1,1 @@
+$XDG_CONFIG_HOME/nvimにファイルを置く。
