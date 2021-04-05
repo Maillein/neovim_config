@@ -9,3 +9,11 @@ on_i = 1
 #     let g:deoplete#enable_at_startup = 1
 #     inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 # '''
+
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = ['rust']
+hook_add = '''
+    " rust auto format
+    let g:rustfmt_autosave = 1
+'''

@@ -34,7 +34,12 @@ endif
 
 "表示関連
 syntax on
+filetype plugin indent on
 set number
+colorscheme jellybeans
+" colorscheme hybrid
+" colorscheme tender
+" colorscheme elly
 
 "インデント関連
 set autoindent
@@ -46,3 +51,6 @@ set nowrap
 "Pythonのパス
 let g:python_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-python2-AaldqeR6/bin/python2')
 let g:python3_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-python3-Jmi4iJEZ/bin/python3')
+
+"coc-listsの設定
+nnoremap <C-p> :CocList files<CR>
