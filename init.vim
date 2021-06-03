@@ -48,6 +48,12 @@ set shiftwidth=4
 set expandtab
 set nowrap
 
+"カーソルを表示行で移動する。物理行移動は<C-n>,<C-p>
+nnoremap j gj
+nnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up>   gk
+
 "Pythonのパス
 let g:python_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-python2-AaldqeR6/bin/python2')
 let g:python3_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-python3-Jmi4iJEZ/bin/python3')
