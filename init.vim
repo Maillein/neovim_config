@@ -54,6 +54,9 @@ nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up>   gk
 
+" Escでターミナルから抜ける
+tnoremap <Esc> <C-\><C-n>
+
 "Pythonのパス
 let g:python_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-python2-AaldqeR6/bin/python2')
 let g:python3_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-python3-Jmi4iJEZ/bin/python3')
