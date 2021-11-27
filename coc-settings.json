@@ -1,0 +1,7 @@
+{
+  "jedi": {
+    "enable": true,
+    "startupMessage": false,
+    "executable.command": "/home/maillein/.nvim-coc-jedi/bin/jedi-language-server"
+  }
+}
