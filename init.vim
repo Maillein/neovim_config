@@ -36,7 +36,14 @@ endif
 syntax on
 filetype plugin indent on
 set number
-colorscheme jellybeans
+
+" 勝手に折りたたまれないようにする
+" set nofoldenable
+
+let g:tokyonight_style = "night"
+let g:tokyonight_transparent = "true"
+colorscheme tokyonight
+" colorscheme jellybeans
 " colorscheme hybrid
 " colorscheme tender
 " colorscheme elly
@@ -61,8 +68,8 @@ tnoremap <Esc> <C-\><C-n>
 let g:python_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-python2-AaldqeR6/bin/python2')
 let g:python3_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-python3-Jmi4iJEZ/bin/python3')
 
-"coc-listsの設定
-nnoremap <C-p> :CocList files<CR>
-
-" :call dein#check_update(v:true)で高速にプラグインアップデート
-runtime coc.init.vim
+" "coc-listsの設定
+" nnoremap <C-p> :CocList files<CR>
+" 
+" " :call dein#check_update(v:true)で高速にプラグインアップデート
+" runtime coc.init.vim
