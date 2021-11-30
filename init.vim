@@ -71,5 +71,6 @@ let g:python3_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-
 " "coc-listsの設定
 " nnoremap <C-p> :CocList files<CR>
 " 
-" " :call dein#check_update(v:true)で高速にプラグインアップデート
-" runtime coc.init.vim
+
+" :call dein#check_update(v:true)で高速にプラグインアップデート
+runtime coc.init.vim
