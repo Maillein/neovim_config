@@ -1,0 +1,37 @@
+{
+    "atcoder": {
+        "prefix": "atcoder",
+        "body": [
+            "#![allow(unused_imports, dead_code, non_snake_case)]",
+            "",
+            "use proconio::{fastout, input, marker::{Chars, Bytes, Usize1}};",
+            "use itertools::Itertools;",
+            "use num::{abs, integer::{Roots, gcd, lcm}, range_inclusive};",
+            "use std::cmp::{min, max, Reverse, Ordering};",
+            "use std::collections::{VecDeque, BinaryHeap, HashMap, HashSet};",
+            "use std::mem::swap;",
+            "use std::fmt::Error;",
+            "",
+            "#[allow(unused_macros)]",
+            "macro_rules! debug {",
+            "    (\\$(\\$a:expr),* \\$(,)*) => {",
+            "        #[cfg(debug_assertions)]",
+            "        eprintln!(concat!(\\$(\"| \", stringify!(\\$a), \"={:?} \"),*, \"|\"), \\$(&\\$a),*);",
+            "    };",
+            "}",
+            "",
+            "const MOD: i64 = 1_000_000_007;",
+            "const DX8: [i64; 9] = [1, 1, 0, -1, -1, -1, 0, 1, 0];",
+            "const DY8: [i64; 9] = [0, 1, 1, 1, 0, -1, -1, -1, 0];",
+            "",
+            "fn main() {",
+            "    input! {",
+            "        $1",
+            "    }",
+            "    $2",
+            "}",
+            ""
+        ],
+        "description": ""
+    }
+}
