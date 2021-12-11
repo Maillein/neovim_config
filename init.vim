@@ -40,6 +40,9 @@ set number
 " 勝手に折りたたまれないようにする
 " set nofoldenable
 
+" マーカー文字列で折りたたむ
+set foldmethod=marker
+
 let g:tokyonight_style = "night"
 let g:tokyonight_transparent = "true"
 colorscheme tokyonight
@@ -73,4 +76,4 @@ let g:python3_host_prog = expand('/home/maillein/.local/share/virtualenvs/.nvim-
 " 
 
 " :call dein#check_update(v:true)で高速にプラグインアップデート
-runtime coc.init.vim
+runtime! ./dein.update.vim

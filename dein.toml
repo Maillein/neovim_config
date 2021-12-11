@@ -62,3 +62,20 @@ hook_add = '''
     nmap <C-_> <Plug>(caw:hatpos:toggle)
     vmap <C-_> <Plug>(caw:hatpos:toggle)
 '''
+
+# [[plugins]]
+# repo = 'nvim-treesitter/nvim-treesitter'
+# merged = 0
+# hook_post_update: 'TSUpdate'
+# hook_source = '''
+# lua <<EOF
+# require'nvim-treesitter.configs'.setup {
+#   highlight = {
+#     enable = true,
+#   },
+#   indent = {
+#     enable = true, -- これを設定することでtree-sitterによるインデントを有効にできます
+#   },
+# }
+# EOF
+# '''

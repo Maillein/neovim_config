@@ -1,4 +1,3 @@
-
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
@@ -57,10 +56,13 @@ inoremap <C-e>   <Cmd>call pum#map#cancel()<CR>
 call ddc#enable()
 '''
 
+# [[plugins]]
+# repo = 'delphinus/ddc-treesitter'
+# on_source = 'ddc.vim'
+
 [[plugins]]
 repo = 'Shougo/pum.vim'
 on_source = 'ddc.vim'
-
 
 [[plugins]]
 repo = 'Shougo/ddc-around'
@@ -99,14 +101,14 @@ imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j
 smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 
 " Expand or jump
-imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+" imap <expr> <C-k>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-k>'
+" smap <expr> <C-k>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-k>'
 
 " Jump forward or backward
-imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
-smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
-imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
-smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+imap <expr> <C-l> vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<C-l>'
+smap <expr> <C-l> vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<C-l>'
+imap <expr> <C-h> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<C-h>'
+smap <expr> <C-h> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<C-h>'
 '''
 
 [[plugins]]
